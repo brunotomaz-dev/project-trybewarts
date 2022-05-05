@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 body {
@@ -35,17 +36,17 @@ body {
 
 h1 {
   text-align: center;
-  margin: 15px;
+  padding: 15px;
 }
 
 #who-iam {
   justify-content: center;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
 #who-iam input , select {
   padding: 7px;
-  margin: 2px;
   width: 250px;
   border: 1px solid rgb(221, 221, 221);
 }
@@ -57,7 +58,7 @@ h1 {
 
 select {
   color: rgb(44, 44, 44);
-  width: 230px;
+  width: 225px;
   background-color: white;
 }
 
