@@ -21,11 +21,13 @@ body {
 .main-flex {
   display: flex;
   justify-content: space-around;
+
   /* border: 1px solid red; */
 }
 
 .container-flex {
   display: flex;
+
   /* border: 1px solid red; */
 }
 
