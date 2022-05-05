@@ -49,7 +49,7 @@ h1 {
 
 #who-iam input , select {
   padding: 7px;
-  width: 250px;
+  width: 45%;
   border: 1px solid rgb(221, 221, 221);
 }
 
@@ -60,7 +60,7 @@ h1 {
 
 select {
   color: rgb(44, 44, 44);
-  width: 225px;
+  width: 41.5%;
   background-color: white;
 }
 
