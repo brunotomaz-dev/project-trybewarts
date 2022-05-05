@@ -35,6 +35,7 @@ body {
 
 h1 {
   text-align: center;
+  margin: 15px;
 }
 
 #who-iam {
@@ -42,11 +43,22 @@ h1 {
   flex-wrap: wrap;
 }
 
-#who-iam input {
+#who-iam input , select {
   padding: 7px;
   margin: 2px;
   width: 250px;
   border: 1px solid rgb(221, 221, 221);
+}
+
+#house-label {
+  align-self: center;
+  color: rgb(44, 44, 44);
+}
+
+select {
+  color: rgb(44, 44, 44);
+  width: 230px;
+  background-color: white;
 }
 
 #trybewarts-forms-logo {
