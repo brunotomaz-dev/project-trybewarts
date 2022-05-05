@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(221, 255, 221);
+}
+
 .header {
   display: flex;
   height: auto;
@@ -8,8 +17,15 @@
   height: 100px;
 }
 
+.main-flex {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
 .container-flex {
   display: flex;
+  /* border: 1px solid red; */
 }
 
 #evaluation-form {
@@ -21,7 +37,18 @@ h1 {
   text-align: center;
 }
 
+#who-iam {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#who-iam input {
+  padding: 7px;
+  margin: 2px;
+  width: 250px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
-
