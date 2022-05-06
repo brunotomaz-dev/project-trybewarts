@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 body {
@@ -45,12 +46,14 @@ body {
 .main-flex {
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid red; */
+
+  border: 1px solid red;
 }
 
 .container-flex {
   display: flex;
-  /* border: 1px solid red; */
+
+  border: 1px solid red;
 }
 
 #evaluation-form {
@@ -60,18 +63,18 @@ body {
 
 h1 {
   text-align: center;
-  margin: 15px;
+  padding: 15px;
 }
 
-#who-iam {
+#who-i-am {
   justify-content: center;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
-#who-iam input , select {
+#who-i-am input , select {
   padding: 7px;
-  margin: 2px;
-  width: 250px;
+  width: 45%;
   border: 1px solid rgb(221, 221, 221);
 }
 
@@ -82,10 +85,28 @@ h1 {
 
 select {
   color: rgb(44, 44, 44);
-  width: 230px;
+  width: 41.5%;
   background-color: white;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#what-i-want {
+  justify-content: space-around;
+}
+
+#who-is-family {
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+}
+
+#label-family {
+  padding-bottom: 5px;
+}
+
+#who-is-family label input {
+  padding: 5px;
 }
