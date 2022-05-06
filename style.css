@@ -54,13 +54,11 @@ body {
   display: flex;
   justify-content: space-around;
   border: 1px solid red;
-  /* border: 1px solid red; */
 }
 
 .container-flex {
   display: flex;
   border: 1px solid red;
-  /* border: 1px solid red; */
 }
 
 #evaluation-form {
@@ -140,4 +138,9 @@ select {
 
 #content .check {
   font-size: 0.9rem;
+}
+
+.styleRate {
+  display: flex;
+  justify-content: space-evenly;
 }
