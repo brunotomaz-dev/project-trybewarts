@@ -153,3 +153,10 @@ select {
 #textarea {
   border: 1px solid black;
 }
+
+#submit-btn {
+  background-color: rgb(133, 4, 231);
+  color: white;
+  height: 40px;
+  border-radius: 15px;
+}
