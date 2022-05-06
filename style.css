@@ -41,6 +41,11 @@ body {
   width: 30%;
   display: flex;
   align-content: center;
+
+}
+
+.borderStyle {
+  border-radius: 10px;
 }
 
 .main-flex {
