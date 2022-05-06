@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(221, 255, 221);
+  font-family: Inknut Antiqua, serif;
 }
 
 .header {
@@ -22,18 +23,19 @@ body {
   display: flex;
   justify-content: space-around;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .container-flex {
   display: flex;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 #evaluation-form {
   width: 675px;
   flex-direction: column;
+  padding: 5px;
 }
 
 h1 {
@@ -45,10 +47,12 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
+  padding: 15px;
 }
 
 #who-i-am input , select {
   padding: 7px;
+  border-radius: 10px;
   width: 45%;
   border: 1px solid rgb(221, 221, 221);
 }
@@ -56,6 +60,7 @@ h1 {
 #house-label {
   align-self: center;
   color: rgb(44, 44, 44);
+  font-size: 0.7rem;
 }
 
 select {
@@ -70,18 +75,34 @@ select {
 
 #what-i-want {
   justify-content: space-around;
+  padding: 5px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #who-is-family {
   flex-direction: column;
-  width: 30%;
+  width: 35%;
   padding: 10px;
 }
 
-#label-family {
-  padding-bottom: 5px;
+.family {
+  font-size: 0.8rem;
 }
 
-#who-is-family label input {
-  padding: 5px;
+#who-is-family #label-family , #label-content {
+  padding-bottom: 15px;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+#content {
+  flex-wrap: wrap;
+  width: 65%;
+  padding: 10px;
+  column-gap: 50px;
+}
+
+#content .check {
+  font-size: 0.9rem;
 }

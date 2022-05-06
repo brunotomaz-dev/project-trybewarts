@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,19 +37,19 @@
             </section>
             <section id="what-i-want" class="container-flex">
                 <div class="container-flex" id="who-is-family">
-                    <label id="label-family">Qual é a sua família?</label>
-                    <label for="frontend"><input type="radio" name="family" value="Frontend" id="frontend"> Família Frontend</label>
-                    <label for="backend"><input type="radio" name="family" value="Backend" id="backend"> Família Backend</label>
-                    <label for="fullstack"><input type="radio" name="family" value="FullStack" id="fullstack"> Família FullStack</label>
+                    <label id="label-family">Qual sua família?</label>
+                    <label for="frontend" class="family"><input type="radio" name="family" value="Frontend" id="frontend"> Família Frontend</label>
+                    <label for="backend" class="family"><input type="radio" name="family" value="Backend" id="backend"> Família Backend</label>
+                    <label for="fullstack" class="family"><input type="radio" name="family" value="FullStack" id="fullstack"> Família FullStack</label>
                 </div>
-                <div>
+                <div id="content" class="container-flex">
                     <label id="label-content">"Qual conteúdo você está com mais vontade de aprender?"</label>
-                    <input type="checkbox" value="HoFs">
-                    <input type="checkbox" value="Jest">
-                    <input type="checkbox" value="Promises">
-                    <input type="checkbox" value="React">
-                    <input type="checkbox" value="SQL">
-                    <input type="checkbox" value="Python">
+                    <label class="check"><input type="checkbox" value="HoFs"> HoFs</label>
+                    <label class="check"><input type="checkbox" value="Jest"> Jest</label>
+                    <label class="check"><input type="checkbox" value="Promises"> Promises</label>
+                    <label class="check"><input type="checkbox" value="React"> React</label>
+                    <label class="check"><input type="checkbox" value="SQL"> SQL</label>
+                    <label class="check"><input type="checkbox" value="Python"> Python</label>
                 </div>
             </section>  
         </form>
