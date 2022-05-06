@@ -25,7 +25,7 @@ body {
   display: flex;
   height: 35px;
   margin-right: 5%;
-
+  gap: 3px;
 }
 
 #trybewarts-header-title {
@@ -36,17 +36,18 @@ body {
 #button {
   background-color: rgb(133, 4, 231);
   color: white;
+  padding: 5px;
 }
 
 #styleInput {
   width: 30%;
   display: flex;
   align-content: center;
-
 }
 
 .borderStyle {
-  border-radius: 10px;
+  border-radius: 7px;
+  padding: 5px;
 }
 
 .main-flex {
