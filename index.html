@@ -11,27 +11,30 @@
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <div>
             <form action="" class="trybewarts-login">
-                <label for="email">
-                    <input type="email" name="email" id="email" placeholder="Email">
-                </label>
-                <label for="senha">
-                    <input type="password" name="password" id="senha" placeholder="Senha">
-                </label>
-                <button>Entrar</button>
+                <input type="email" name="email" id="" placeholder="Email">
+                <input type="password" name="password" placeholder="Senha">
+                <button id="button">Entrar</button>
             </form>
-        </div>
     </header>
-
-
-
-
-
-
-
-
-
-
+    <main class="main-flex">
+        <form action="" method="post" id="evaluation-form" class="container-flex">
+            <h1>Formulário de Avaliação</h1>
+            <div id="who-iam" class="container-flex">
+                <input type="text" name="input-name" placeholder="Nome" id="input-name">
+                <input type="text" name="input-lastname" placeholder="Sobrenome" id="input-lastname">
+                <input type="email" name="input-email" placeholder="Email" id="input-email">
+                <label for="house" id="house-label">Casa:</label>
+                <select name="house" id="house">
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pyterina-house">Pyterina</option>
+                </select>
+            </div>
+        </form>
+        <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+    </main>
+<script src="script.js"></script>
 </body>
 </html>

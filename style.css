@@ -1,20 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(221, 255, 221);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  height: auto;
+  align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
   height: 100px;
+  margin-left: 5%;
 }
 
 .trybewarts-login {
   display: flex;
-  
-  border: 2px solid red;
+  height: 35px;
+  margin-right: 5%;
+
 }
 
 #trybewarts-header-title {
   color: white;
+  font-size: 3.5em;
+}
+
+#button {
+  background-color: rgb(133, 4, 231);
+  color: white;
+}
+
+#styleInput {
+  width: 30%;
+  display: flex;
+  align-content: center;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+
+.container-flex {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 15px;
+}
+
+#who-iam {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#who-iam input , select {
+  padding: 7px;
+  margin: 2px;
+  width: 250px;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+#house-label {
+  align-self: center;
+  color: rgb(44, 44, 44);
+}
+
+select {
+  color: rgb(44, 44, 44);
+  width: 230px;
+  background-color: white;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
