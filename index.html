@@ -20,7 +20,7 @@
     <main class="main-flex">
         <form action="" method="post" id="evaluation-form" class="container-flex">
             <h1>Formulário de Avaliação</h1>
-            <div id="who-iam" class="container-flex">
+            <section id="who-i-am" class="container-flex">
                 <input type="text" name="input-name" placeholder="Nome" id="input-name">
                 <input type="text" name="input-lastname" placeholder="Sobrenome" id="input-lastname">
                 <input type="email" name="input-email" placeholder="Email" id="input-email">
@@ -31,8 +31,24 @@
                     <option value="Corvinode" id="corvinode-house">Corvinode</option>
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
-                
-            </div>
+            </section>
+            <section id="what-i-want" class="container-flex">
+                <div class="container-flex" id="who-is-family">
+                    <label id="label-family">Qual é a sua família?</label>
+                    <label for="frontend"><input type="radio" name="family" value="Frontend" id="frontend"> Família Frontend</label>
+                    <label for="backend"><input type="radio" name="family" value="Backend" id="backend"> Família Backend</label>
+                    <label for="fullstack"><input type="radio" name="family" value="FullStack" id="fullstack"> Família FullStack</label>
+                </div>
+                <div>
+                    <label id="label-content">"Qual conteúdo você está com mais vontade de aprender?"</label>
+                    <input type="checkbox" value="HoFs">
+                    <input type="checkbox" value="Jest">
+                    <input type="checkbox" value="Promises">
+                    <input type="checkbox" value="React">
+                    <input type="checkbox" value="SQL">
+                    <input type="checkbox" value="Python">
+                </div>
+            </section>  
         </form>
         <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     </main>

@@ -22,13 +22,13 @@ body {
   display: flex;
   justify-content: space-around;
 
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .container-flex {
   display: flex;
 
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 #evaluation-form {
@@ -41,13 +41,13 @@ h1 {
   padding: 15px;
 }
 
-#who-iam {
+#who-i-am {
   justify-content: center;
   flex-wrap: wrap;
   gap: 5px;
 }
 
-#who-iam input , select {
+#who-i-am input , select {
   padding: 7px;
   width: 45%;
   border: 1px solid rgb(221, 221, 221);
@@ -66,4 +66,22 @@ select {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#what-i-want {
+  justify-content: space-around;
+}
+
+#who-is-family {
+  flex-direction: column;
+  width: 30%;
+  padding: 10px;
+}
+
+#label-family {
+  padding-bottom: 5px;
+}
+
+#who-is-family label input {
+  padding: 5px;
 }
