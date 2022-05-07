@@ -57,12 +57,13 @@ body {
 
 .container-flex {
   display: flex;
+  border: 1px solid red;
 }
 
 #evaluation-form {
   width: 675px;
   flex-direction: column;
-  padding: 5px;
+  padding: 15px;
 }
 
 h1 {
@@ -159,4 +160,9 @@ select {
   color: white;
   height: 40px;
   border-radius: 15px;
+}
+
+#foot {
+  background-color: gray;
+  justify-content: center;
 }
