@@ -15,9 +15,19 @@ login();
 function sendButton() { //  https://www.w3schools.com/jsref/dom_obj_pushbutton.asp
   const btn = document.querySelector('#submit-btn');
   btn.disabled = true;
-  const formulario = document.querySelector('#agreement');
-  formulario.addEventListener('click', () => {
+  const formBox = document.querySelector('#agreement');
+  formBox.addEventListener('click', () => {
     btn.disabled = false;
   });
 }
 sendButton();
+
+function characterCount() {
+  const textArea = document.querySelector('#textarea');
+  textArea.addEventListener('keyup', () => { //  https://www.w3schools.com/jsref/dom_obj_event.asp
+    const count = document.querySelector('#counter');
+    count.innerHTML = 500 - (textArea.value.length);
+    console.log(textArea.value.length);
+  });
+}
+characterCount();
