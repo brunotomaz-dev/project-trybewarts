@@ -14,14 +14,14 @@
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo da Trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
-            <form action="" class="trybewarts-login" >
+            <form action="" method="GET" class="trybewarts-login" >
                 <input type="email" name="email" class="borderStyle" id="inputEmail" placeholder="Email">
                 <input type="password" name="password" id="inputSenha" class="borderStyle" placeholder="Senha">
                 <button id="button" class="borderStyle">Entrar</button>
             </form>
     </header>
     <main class="main-flex">
-        <form action="" method="post" id="evaluation-form" class="container-flex">
+        <form action="" method="GET" id="evaluation-form" class="container-flex">
             <h1>Formulário de Avaliação</h1>
             <section id="who-i-am" class="container-flex">
                 <input type="text" name="input-name" placeholder="Nome" id="input-name">
@@ -69,12 +69,13 @@
             </section>
             <section class="styleArea">
                 <label class="textarea">Deixe seu comentário:</label>
-                <textarea name="" id="textarea" cols="30" rows="8" maxlength="500" placeholder="máximo de 500 caracteres"></textarea>
+                <textarea name="comentário" id="textarea" cols="30" rows="8" maxlength="500" placeholder="máximo de 500 caracteres"></textarea>
                 <div>
-                    <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-                    <input id="agreement" type="checkbox">
+                    <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
+                        <input id="agreement" type="checkbox">
+                    </label>
                 </div>
-                <button id="submit-btn" type="submit">Enviar</button>
+                <button type="submit" id="submit-btn">Enviar</button>
             </section>
         </form>
         <img src="./images/trybewarts-colored.svg" id="trybewarts-forms-logo">

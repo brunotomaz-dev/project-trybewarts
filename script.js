@@ -12,11 +12,12 @@ function login() {
 }
 login();
 
-/*  function sendButton() {
+function sendButton() { //  https://www.w3schools.com/jsref/dom_obj_pushbutton.asp
   const btn = document.querySelector('#submit-btn');
-  btn.addEventListener('click', (event) => {
-    event.preventDefault();
-
+  btn.disabled = true;
+  const formulario = document.querySelector('#agreement');
+  formulario.addEventListener('click', () => {
+    btn.disabled = false;
   });
 }
-sendButton();   */
+sendButton();
