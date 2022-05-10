@@ -61,20 +61,6 @@ getFamily.forEach((item) => {
   });
 });
 
-// const getContent = document.querySelectorAll('.check');
-// const contentArray = [];
-// const contentStringfy = () => {
-//   const contentNewArray = [...new Set(contentArray)];
-//   const contentString = JSON.stringify(contentNewArray);
-//   localStorage.setItem('Matérias', contentString);
-// };
-// getContent.forEach((item) => {
-//   item.addEventListener('click', () => {
-//     contentArray.push(item.innerText);
-//     contentStringfy();
-//   });
-// });
-
 const getContent = document.querySelectorAll('.check');
 getContent.forEach((item) => {
   item.addEventListener('click', () => {
