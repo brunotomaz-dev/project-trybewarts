@@ -61,10 +61,33 @@ getFamily.forEach((item) => {
   });
 });
 
+// const getContent = document.querySelectorAll('.check');
+// const contentArray = [];
+// const contentStringfy = () => {
+//   const contentNewArray = [...new Set(contentArray)];
+//   const contentString = JSON.stringify(contentNewArray);
+//   localStorage.setItem('Matérias', contentString);
+// };
+// getContent.forEach((item) => {
+//   item.addEventListener('click', () => {
+//     contentArray.push(item.innerText);
+//     contentStringfy();
+//   });
+// });
+
 const getContent = document.querySelectorAll('.check');
 getContent.forEach((item) => {
   item.addEventListener('click', () => {
-    localStorage.setItem('Matérias', item.innerText);
+    const contentChecked = document.querySelectorAll('input[name="content"]:checked');
+    const contents = [];
+    contentChecked.forEach((content) => {
+      contents.push(content.value);
+    });
+    let contentString = `${contents[0]}`;
+    for (let itens = 1; itens < contents.length; itens += 1) {
+      contentString += `, ${contents[itens]}`;
+    }
+    localStorage.setItem('Matérias', contentString);
   });
 });
 
