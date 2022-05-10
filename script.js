@@ -31,3 +31,79 @@ function characterCount() {
   });
 }
 characterCount();
+
+// -------------------Requisito 21----------------------------
+
+const getFirstName = document.querySelector('#input-name');
+getFirstName.addEventListener('change', () => {
+  localStorage.setItem('name', getFirstName.value);
+});
+
+const getLastName = document.querySelector('#input-lastname');
+getLastName.addEventListener('change', () => {
+  localStorage.setItem('lastname', getLastName.value);
+});
+
+const getEmail = document.querySelector('#input-email');
+getEmail.addEventListener('change', () => {
+  localStorage.setItem('Email', getEmail.value);
+});
+
+const getHouse = document.querySelector('select#house');
+getHouse.addEventListener('change', () => {
+  localStorage.setItem('Casa', getHouse.value);
+});
+
+const getFamily = document.getElementsByName('family');
+getFamily.forEach((item) => {
+  item.addEventListener('click', () => {
+    localStorage.setItem('Família', item.value);
+  });
+});
+
+const getContent = document.querySelectorAll('.check');
+getContent.forEach((item) => {
+  item.addEventListener('click', () => {
+    localStorage.setItem('Matérias', item.innerText);
+  });
+});
+
+const getRate = document.getElementsByName('rate');
+getRate.forEach((item) => {
+  item.addEventListener('click', () => {
+    localStorage.setItem('Avaliação', item.value);
+  });
+});
+
+const getTextArea = document.querySelector('#textarea');
+getTextArea.addEventListener('keyup', () => {
+  localStorage.setItem('Observações', getTextArea.value);
+});
+
+const getForm = document.querySelector('#evaluation-form');
+function clearForm() {
+  while (getForm.hasChildNodes()) {
+    getForm.removeChild(getForm.firstChild);
+  }
+}
+
+function createLog() {
+  const nameP = document.createElement('p');
+  nameP.innerHTML = `Nome: ${localStorage.getItem('name')} ${localStorage.getItem('lastname')}`;
+  nameP.className = 'log';
+  getForm.appendChild(nameP);
+
+  const saved = ['Email', 'Casa', 'Família', 'Matérias', 'Avaliação', 'Observações'];
+  for (let item = 0; item < saved.length; item += 1) {
+    const createP = document.createElement('p');
+    createP.innerHTML = `${saved[item]}: ${localStorage.getItem(saved[item])}`;
+    createP.className = 'log';
+    getForm.appendChild(createP);
+  }
+}
+
+const getButton = document.querySelector('#submit-btn');
+getButton.addEventListener('click', () => {
+  clearForm();
+  createLog();
+});
